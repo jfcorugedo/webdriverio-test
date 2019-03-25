@@ -1,2 +1,5 @@
 node_modules
 .idea
+test/reports
+allure-report
+junit-results.html

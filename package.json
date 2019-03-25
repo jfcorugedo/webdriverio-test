@@ -4,6 +4,10 @@
   "description": "",
   "main": "test.js",
   "dependencies": {
+    "@wdio/allure-reporter": "^5.7.2",
+    "@wdio/junit-reporter": "^5.7.2",
+    "@wdio/spec-reporter": "^5.7.2",
+    "junit-viewer": "^4.11.1",
     "webdriverio": "^5.7.5"
   },
   "devDependencies": {
@@ -14,7 +18,9 @@
   },
   "scripts": {
     "test": "node test2.js",
-    "start:chrome": "./chromedriver --url-base=/wd/hub --port=4444"
+    "start:chrome": "./chromedriver --url-base=/wd/hub --port=4444",
+    "allure-report": "allure generate --clean ./test/reports/allure-results && allure report",
+    "junit-report": "node_modules/.bin/junit-viewer --results=./test/reports/junit-results --save=junit-results.html && open junit-results.html"
   },
   "keywords": [],
   "author": "",

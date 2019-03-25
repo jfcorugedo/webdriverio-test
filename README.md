@@ -24,8 +24,22 @@ After a few seconds you will see the result:
 
 ##Reporting
 
-It also uses `junit-reporter` and `allure-reporter` to generate some cool API to see test results:
+It also uses `junit-reporter` and `allure-reporter` to generate some cool API to see test results.
+
+To see allure dashboard run:
+
+```sh
+$ npm run allure-report
+```
 
 ![allure dashboard](https://github.com/jfcorugedo/webdriverio-test/blob/master/screenshots/allure-dashboard.png)
+
+To see JUnit dashboard run this command:
+
+
+```sh
+$ npm run junit-report
+```
+
 
 ![junit dashboard](https://github.com/jfcorugedo/webdriverio-test/blob/master/screenshots/junit-dashboard.png)

@@ -6,9 +6,12 @@
   "dependencies": {
     "webdriverio": "^5.7.5"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@wdio/cli": "^5.7.5"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node test2.js",
+    "start:chrome": "./chromedriver --url-base=/wd/hub --port=4444"
   },
   "keywords": [],
   "author": "",

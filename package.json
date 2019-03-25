@@ -17,9 +17,9 @@
     "@wdio/sync": "^5.7.3"
   },
   "scripts": {
-    "test": "node test2.js",
+    "test": "./node_modules/.bin/wdio wdio.conf.js",
     "start:chrome": "./chromedriver --url-base=/wd/hub --port=4444",
-    "allure-report": "allure generate --clean ./test/reports/allure-results && allure report",
+    "allure-report": "allure serve ./test/reports/allure-results",
     "junit-report": "node_modules/.bin/junit-viewer --results=./test/reports/junit-results --save=junit-results.html && open junit-results.html"
   },
   "keywords": [],

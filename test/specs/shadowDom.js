@@ -8,4 +8,16 @@ describe('shop.polymer-project.org page', () => {
     console.log('Title', title);
     assert.equal(title, 'Home - SHOP');
   });
+
+  it('can switch to Ladies Outerwear', () => {
+    browser.url('https://shop.polymer-project.org');
+    const tab = $('shop-app').shadow$('app-header').$('a[href="/list/ladies_outerwear"]');
+
+    tab.click();
+    console.log('Ladies tab', tab);
+
+    const listTitle = $('shop-app').shadow$('shop-list').shadow$('header > h1');
+    console.log('Title', listTitle);
+    assert.equal(listTitle.getText(), 'Ladies Outerwear');
+  });
 });

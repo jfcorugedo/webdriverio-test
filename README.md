@@ -5,7 +5,7 @@ It uses last version of webdriverio in order to be able to locate elements insid
 
 To test over web components and its ShadowDOM it is using https://shop.polymer-project.org.
 
-##How to run
+## How to run
 
 * Start chromedriver inside a terminal:
 
@@ -22,7 +22,7 @@ After a few seconds you will see the result:
 
 ![test results](https://github.com/jfcorugedo/webdriverio-test/blob/master/screenshots/test-results.png)
 
-##Reporting
+## Reporting
 
 It also uses `junit-reporter` and `allure-reporter` to generate some cool API to see test results.
 
